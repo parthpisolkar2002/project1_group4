@@ -67,4 +67,4 @@ ivy_league = ["Brown University",
                       "Princeton University",
                       "Yale University"]
 ivy = ivy[ivy['instnm'].isin(ivy_league)].reset_index()
-ivy
+ivy.to_excel("ivy_leagues.xlsx")
